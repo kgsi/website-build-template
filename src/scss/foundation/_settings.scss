@@ -1,0 +1,147 @@
+// -----------------------
+// # Setting
+// -----------------------
+
+// Function
+
+// Remove the unit of a length
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function rem($pixels, $context: 16) {
+  // 16px
+  @return #{$pixels / $context}rem;
+}
+
+$--spacing-1x: 4px;
+$--spacing-2x: 8px;
+$--spacing-3x: 12px;
+$--spacing-4x: 16px;
+$--spacing-5x: 20px;
+$--spacing-6x: 24px;
+$--spacing-7x: 28px;
+$--spacing-8x: 32px;
+$--spacing-9x: 36px;
+$--spacing-10x: 40px;
+$--spacing-12x: 48px;
+$--spacing-16x: 64px;
+$--spacing-18x: 72px;
+$--spacing-20x: 96px;
+$--spacing-32x: 128px;
+
+$--line-height-none: 1.1;
+$--line-height-xs: 1.2;
+$--line-height-sm: 1.6;
+$--line-height-md: 1.8;
+$--line-height-lg: 2.2;
+$--line-height-xl: 2.4;
+$--line-height-xxl: 2.6;
+
+$--font-size-xs: rem(10);
+$--font-size-sm: rem(12);
+$--font-size-md: rem(16); // 本文基本サイズ
+$--font-size-lg: rem(20);
+$--font-size-xl: rem(24);
+$--font-size-xxl: rem(28);
+$--font-size-h5: rem(16);
+$--font-size-h4: rem(20);
+$--font-size-h3: rem(24); // 見出しサイズ（中）
+$--font-size-h2: rem(32);
+$--font-size-h1: rem(48); // 見出しサイズ（大）
+
+$--font-weight-bd: 700;
+$--font-weight-md: 500;
+
+$--font-family-ja: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans", Meiryo, sans-serif;
+$--font-family-en: "Varela Round", sans-serif;
+
+$--color-accent: #ff5c00;
+$--color-primary-100: #0451c4;
+$--color-primary-200: #a352c9;
+$--color-secondary-100: #1e73d9;
+$--color-secondary-200: #128d00;
+$--color-base-100: #000000;
+$--color-base-200: #171717;
+$--color-base-300: #212121;
+$--color-base-400: #555555;
+$--color-base-500: #999999;
+$--color-base-600: #c4c4c4;
+$--color-base-700: #f2f2f0;
+$--color-base-800: #ffffff;
+
+$--color-link-behance: #0057ff;
+$--color-link-dribbble: #ea4c89;
+$--color-link-facebook: #3b5998;
+$--color-link-github: #1a1414;
+$--color-link-linkedin: #0077b5;
+$--color-link-qiita: #59bb0c;
+$--color-link-twitter: #1da1f2;
+$--color-link-note: #68c6b4;
+$--color-link-connpass: #c63e1f;
+
+$--color-system-alert: #fd4477;
+$--color-system-caution: #fdca44;
+
+$--color-primary: $--color-primary-100;
+$--color-secondary: $--color-secondary-100;
+$--color-dark: $--color-base-100;
+$--color-light: $--color-base-800;
+$--color-grayscale: $--color-base-700;
+$--color-bodyText: $--color-base-100;
+$--color-subText: $--color-base-300;
+$--color-mint: #28cac0;
+$--color-bg: $--color-base-800;
+$--color-border-dark: $--color-base-500;
+$--color-border-light: $--color-base-600;
+$--color-link: $--color-base-100;
+
+$--gradient-primary-a: linear-gradient(
+  to top left,
+  $--color-secondary-100 0%,
+  $--color-primary-100 51%,
+  $--color-secondary-200 100%
+);
+$--gradient-primary-b: linear-gradient(
+  to top left,
+  $--color-secondary-200 0%,
+  $--color-primary-100 100%
+);
+
+$--shadow-lg: 0 4px 8px $--color-border-dark;
+
+$--radius-round: 50%;
+$--radius-pill: 99em;
+$--radius-sm: 4px;
+$--radius-md: 6px;
+$--radius-lg: 10px;
+$--radius-xl: 12px;
+
+$--z-index-xl: 10000;
+$--z-index-lg: 1000;
+$--z-index-md: 100;
+$--z-index-sm: 10;
+$--z-index-xs: 1;
+
+$--breakpoint-xs: 320px !default;
+$--breakpoint-sm: 566px !default;
+$--breakpoint-md: 864px !default;
+$--breakpoint-lg: 1024px !default;
+$--breakpoint-xl: 1280px !default;
+
+$--vertical-breakpoint-md: 800px !default;
+
+$--content-width-md: $--breakpoint-md;
+$--content-width-lg: $--breakpoint-lg;
+$--content-main: 768px;
+
+$--header-height: 80px;
+$--message-threads-header-height: 136px;
+$--message-header-height: 84px;
+$--message-sidebar-width: 312px;
+$--message-input-height: 160px;

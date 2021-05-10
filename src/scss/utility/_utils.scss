@@ -1,0 +1,72 @@
+$sizes: 1x, 2x, 3x, 4x, 6x;
+$sizesValue: $--spacing-1x, $--spacing-2x, $--spacing-3x, $--spacing-4x,
+  $--spacing-6x;
+
+.u-mt_0 {
+  margin-top: $--spacing-1x;
+}
+
+.u-lh_xs {
+  line-height: $--line-height-xs;
+}
+
+.u-lh_sm {
+  line-height: $--line-height-sm;
+}
+
+.u-lh_md {
+  line-height: $--line-height-md;
+}
+
+.u-lh_lg {
+  line-height: $--line-height-lg;
+}
+
+.u-show {
+  &--lg {
+    display: inherit;
+
+    @include breakpoint(lg) {
+      display: none;
+    }
+  }
+
+  &--md {
+    display: none;
+
+    @include breakpoint(md) {
+      display: inherit;
+    }
+  }
+
+  &--sm {
+    display: none;
+
+    @include breakpoint(lg) {
+      display: inherit;
+    }
+  }
+}
+
+.u-hide {
+  &--md {
+    display: inherit;
+
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+  &--sm {
+    display: inherit;
+
+    @include breakpoint(sm) {
+      display: none;
+    }
+  }
+}
+
+@for $i from 1 through length($sizesValue) {
+  .u-mt_#{nth($sizes, $i)} {
+    margin-top: nth($sizesValue, $i) !important;
+  }
+}

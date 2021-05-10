@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@import "vendor/reset";
+
+// =======================
+// # Foundtion
+// =======================
+
+// Settings
+@import "foundation/settings";
+@import "foundation/base";
+@import "foundation/mixins";
+
+// =======================
+// # Layout
+// =======================
+
+// @import "layout/header";
+// @import "layout/main";
+// @import "layout/footer";
+
+// -----------------------
+// # Component
+// -----------------------
+
+// @import "object/component/button";
+
+
+// -----------------------
+// # Project
+// -----------------------
+
+// @import "object/project/home";
+
+// -----------------------
+// # Utility
+// -----------------------
+@import "utility/utils.scss";

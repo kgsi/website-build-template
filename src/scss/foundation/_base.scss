@@ -1,0 +1,111 @@
+// =======================
+// # Base
+// =======================
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $--color-bg;
+  line-height: $--line-height-md;
+  font-family: $--font-family-ja;
+  font-size: $--font-size-md;
+  font-feature-settings: "palt";
+  letter-spacing: 1px;
+  color: $--color-bodyText;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img,
+svg,
+input,
+textarea,
+select {
+  vertical-align: middle;
+}
+
+a {
+  color: $--color-link;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  line-height: $--line-height-sm;
+}
+
+img {
+  max-width: 100%;
+}
+
+small {
+  font-size: $--font-size-sm;
+}
+
+ul,
+li {
+  list-style: initial;
+}
+
+li {
+  margin-left: $--spacing-6x;
+
+  &:after {
+    content: "";
+    width: 1px;
+    height: 40%;
+    display: inline-block;
+    background: $--color-grayscale;
+  }
+}
+
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+}
