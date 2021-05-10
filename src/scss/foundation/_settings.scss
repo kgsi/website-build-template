@@ -20,19 +20,14 @@
 
 $--spacing-1x: 4px;
 $--spacing-2x: 8px;
-$--spacing-3x: 12px;
 $--spacing-4x: 16px;
-$--spacing-5x: 20px;
 $--spacing-6x: 24px;
-$--spacing-7x: 28px;
 $--spacing-8x: 32px;
-$--spacing-9x: 36px;
 $--spacing-10x: 40px;
 $--spacing-12x: 48px;
-$--spacing-16x: 64px;
+$--spacing-14x: 64px;
 $--spacing-18x: 72px;
 $--spacing-20x: 96px;
-$--spacing-32x: 128px;
 
 $--line-height-none: 1.1;
 $--line-height-xs: 1.2;
@@ -61,11 +56,11 @@ $--font-family-ja: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
   "Hiragino Sans", Meiryo, sans-serif;
 $--font-family-en: "Varela Round", sans-serif;
 
-$--color-accent: #ff5c00;
-$--color-primary-100: #0451c4;
-$--color-primary-200: #a352c9;
-$--color-secondary-100: #1e73d9;
-$--color-secondary-200: #128d00;
+$--color-accent: #000000;
+$--color-primary-100: #000000;
+$--color-primary-200: #000000;
+$--color-secondary-100: #000000;
+$--color-secondary-200: #000000;
 $--color-base-100: #000000;
 $--color-base-200: #171717;
 $--color-base-300: #212121;
@@ -93,10 +88,6 @@ $--color-secondary: $--color-secondary-100;
 $--color-dark: $--color-base-100;
 $--color-light: $--color-base-800;
 $--color-grayscale: $--color-base-700;
-$--color-bodyText: $--color-base-100;
-$--color-subText: $--color-base-300;
-$--color-mint: #28cac0;
-$--color-bg: $--color-base-800;
 $--color-border-dark: $--color-base-500;
 $--color-border-light: $--color-base-600;
 $--color-link: $--color-base-100;
@@ -138,10 +129,3 @@ $--vertical-breakpoint-md: 800px !default;
 
 $--content-width-md: $--breakpoint-md;
 $--content-width-lg: $--breakpoint-lg;
-$--content-main: 768px;
-
-$--header-height: 80px;
-$--message-threads-header-height: 136px;
-$--message-header-height: 84px;
-$--message-sidebar-width: 312px;
-$--message-input-height: 160px;
